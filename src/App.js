@@ -27,7 +27,6 @@ export default function App() {
           </Route>
           <Route path="/">
             <Home />
-            <HeroSection />
           </Route>
         </Switch>
       </Router>

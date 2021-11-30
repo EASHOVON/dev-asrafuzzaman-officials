@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
-import Button from './Button';
-import PText from './PText';
-import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
-import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import React from "react";
+import styled from "styled-components";
+import HeroImg from "../assets/images/hero.png";
+import Button from "./Button";
+import PText from "./PText";
+import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
+import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
 const HeroStyles = styled.div`
   .hero {
@@ -27,7 +27,7 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-size: 7rem;
-      font-family: 'Montserrat SemiBold';
+      font-family: "Montserrat SemiBold";
       color: var(--white);
     }
   }
@@ -156,12 +156,16 @@ const HeroSection = () => (
         </div>
         <div className="hero__info">
           <PText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            laborum quis voluptatem facere, error libero obcaecati. Eos
-            consequatur facere esse asperiores voluptatibus at earum, laborum
-            culpa. Placeat praesentium consequuntur asperiores!
+            I am a Frontend Web Developer, and I'm very passionate and dedicated
+            to my work. With wide experience as a React Web Developer, I have
+            acquired the skills and knowledge necessary to succeed in your
+            project. I enjoy every step of the design process, from discussion
+            and collaboration.
           </PText>
-          <Button btnLink="/projects" btnText="see my works" />
+          <Button
+            btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
+            btnText="DOWNLOAD RESUME"
+          />
         </div>
         <div className="hero__social">
           <div className="hero__social__indicator">
@@ -172,34 +176,34 @@ const HeroSection = () => (
             <ul>
               <li>
                 <a
-                  href="http://facebook.com/webcifar"
+                  href="https://www.facebook.com/masuvon/"
                   target="_blank"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
                   FB
                 </a>
               </li>
               <li>
                 <a
-                  href="http://twitter.com/webcifar"
+                  href="https://www.linkedin.com/in/eashovon/"
                   target="_blank"
-                  rel="noreferrer"
-                >
-                  TW
+                  rel="noreferrer">
+                  LI
                 </a>
               </li>
               <li>
                 <a
-                  href="http://isntagram.com/web_cifar"
+                  href="https://github.com/EASHOVON"
                   target="_blank"
-                  rel="noreferrer"
-                >
-                  IG
+                  rel="noreferrer">
+                  GI
                 </a>
               </li>
               <li>
-                <a href="http://webcifar.com" target="_blank" rel="noreferrer">
-                  LI
+                <a
+                  href="https://twitter.com/eashovon"
+                  target="_blank"
+                  rel="noreferrer">
+                  TW
                 </a>
               </li>
             </ul>
