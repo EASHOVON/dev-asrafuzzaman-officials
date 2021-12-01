@@ -1,11 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HeroSection from './components/HeroSection';
-import NavMenu from './components/NavMenu';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Home from './Pages/Home';
-import Projects from './Pages/Projects';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+
+import NavMenu from "./components/NavMenu";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );

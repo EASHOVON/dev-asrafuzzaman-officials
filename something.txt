@@ -1,0 +1,7 @@
+Expertise: HTML5, CSS3, BootStrap5, React Bootstrap, Material-UI, React, React Router
+
+Comfortable: JavaScript, ES6
+
+Familiar: Tailwind CSS
+
+Tools: Visual Studio Code, Git / GitHub, Chrome Dev Tool, Firebase, Netlify, Node.js, Express.js, MongoDB, Heroku, Npm

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeroImg from "../assets/images/hero.png";
-import Button from "./Button";
+import ButtonForResume from "./ButtonForResume";
 import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
@@ -162,7 +162,7 @@ const HeroSection = () => (
             project. I enjoy every step of the design process, from discussion
             and collaboration.
           </PText>
-          <Button
+          <ButtonForResume
             btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
             btnText="DOWNLOAD RESUME"
           />

@@ -1,5 +1,7 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
+import ContactBanner from "../components/ContactBanner";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import ServiceSection from "../components/ServiceSection";
@@ -12,6 +14,7 @@ const Home = () => (
     <ServiceSection />
     <ProjectSection />
     <TestimonialsSection />
+    <ContactBanner />
   </div>
 );
 
