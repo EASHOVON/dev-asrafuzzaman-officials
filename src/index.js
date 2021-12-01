@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import GlobalStyles from './styles/GlobalStyle';
-import Typography from './styles/Typography';
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import GlobalStyles from "./styles/GlobalStyle";
+import Typography from "./styles/Typography";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +12,7 @@ ReactDOM.render(
     <Typography />
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
