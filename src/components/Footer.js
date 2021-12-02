@@ -118,7 +118,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2021 - Ashrafuzzaman | Designed By Web Cifar</PText>
+          <PText>© 2021 - Ashrafuzzaman | All Right Reserved</PText>
         </div>
       </div>
     </FooterStyles>
