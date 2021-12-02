@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import projectImg from "../assets/images/projectImg.png";
+import CarImg from "../assets/images/car.png";
+import ButtonForResume from "../components/ButtonForResume";
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -29,17 +30,35 @@ const ProjectItemStyles = styled.div`
     font-family: "RobotoMono Regular";
     margin-top: 1rem;
   }
+  .projectSection__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
+    }
+    .projectSection__button {
+      flex-direction: column;
+      gap: 0;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 `;
 
 export default function ProjectItem({
-  img = projectImg,
+  img = CarImg,
   title = "Project Name",
   desc = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere tempora impedit quis, exercitationem iure dolores ad expedita non animi et omnis harum eveniet beatae enim nisi rem repellat aspernatur!",
+  clientCodeLink,
+  liveSite,
 }) {
   return (
     <ProjectItemStyles>
@@ -51,6 +70,14 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        <div className="projectSection__buttons">
+          <ButtonForResume btnLink={liveSite} btnText="Live Site" />
+          <ButtonForResume
+            btnLink={clientCodeLink}
+            btnText="Source Code"
+            outline
+          />
+        </div>
       </div>
     </ProjectItemStyles>
   );

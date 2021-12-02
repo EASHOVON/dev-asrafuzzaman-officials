@@ -1,45 +1,55 @@
-import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import { v4 as uuidv4 } from "uuid";
+import FoodSite from "../images/food.png";
+import FootBallSite from "../images/football.png";
+import BikeSite from "../images/bike.png";
+import TourSite from "../images/tour.png";
+import CarSite from "../images/car.png";
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
-    desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+    name: "Car Dealer FullStack Website",
+    desc: `Technology Used: React, Bootstrap, Material UI,
+    React-Router, Firebase, Node.js, Express.js,
+    MongoDB, Heroku`,
+    clientCodeLink: "https://github.com/EASHOVON/cardealer-client-site",
+    liveSite: "https://cardealer-58ff1.web.app/",
+    img: CarSite,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
-    desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+    name: "Tour-X FullStack Website",
+    desc: `Technology Used: React, React-Bootstrap, React-
+    Router, Firebase, Node.js, Express.js, MongoDB,
+    Heroku,MongoDB, Heroku`,
+    clientCodeLink:
+      "https://github.com/EASHOVON/tour-x-travels-tourism-agency-client-site",
+    liveSite: "https://tour-x-travels-tourism-a-698bc.web.app/",
+    img: TourSite,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+    name: "Honda Responsive Website",
+    desc: `Technology Used: Here use HTML5, CSS3, CSS Media Query, BootStrap5.`,
+    clientCodeLink: "https://github.com/EASHOVON/honda-cbr-bootstrap",
+    liveSite: "https://honda-cbr-eashovon.netlify.app/",
+    img: BikeSite,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    name: "Football Responsive Website",
+    desc: `Technology Used: Here use HTML5, CSS3, CSS Media Query. This is only for mobile device and large device responsive.`,
+    clientCodeLink: "https://github.com/EASHOVON/football-responsive",
+    liveSite: "https://eashovon.github.io/football-responsive/",
+    img: FootBallSite,
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    name: "FoodHub Website",
+    desc: "This is a very basic food Website. This is my first creation of website which I build my sefl.",
+    clientCodeLink: "https://github.com/EASHOVON/food-hub",
+    liveSite: "https://eashovon.github.io/food-hub/",
+    img: FoodSite,
   },
 ];
 

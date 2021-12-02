@@ -1,6 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
+import { useForm, ValidationError } from "@formspree/react";
 
 const FormStyles = styled.form`
   width: 100%;
@@ -41,50 +41,47 @@ const FormStyles = styled.form`
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [state, handleSubmit] = useForm("xnqwawev");
+  if (state.succeeded) {
+    return <h2 style={{ fontSize: "3rem" }}>Thanks for contacting me</h2>;
+  }
 
   return (
     <div>
-      <FormStyles>
+      <FormStyles
+        action="https://formspree.io/f/xnqwawev"
+        onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">
             Your Name
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
+            <input id="name" type="text" name="name" />
           </label>
         </div>
         <div className="form-group">
           <label htmlFor="email">
-            Your Namemaile
-            <input
-              type="email"
-              name="emaiemaill"
-              id="emailemail"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+            Your Email
+            <input id="email" type="email" name="email" />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </label>
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            Your Namemaile
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+            Your Message
+            <textarea id="message" name="message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
             />
           </label>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" disabled={state.submitting}>
+          Send
+        </button>
       </FormStyles>
     </div>
   );

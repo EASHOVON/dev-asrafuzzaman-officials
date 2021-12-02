@@ -1,5 +1,6 @@
 import React from "react";
-import { MdCode, MdDesktopMac, MdPhonelinkSetup } from "react-icons/md";
+import { MdCode, MdDesktopMac } from "react-icons/md";
+import { RiNodeTree } from "react-icons/ri";
 import styled from "styled-components";
 import SectionTitle from "./SectionTitle";
 import ServicesSectionItem from "./ServicesSectionItem";
@@ -40,9 +41,9 @@ export default function ServiceSection() {
             desc="I also develop the websites. I create high performance website with blazing fast speed."
           />
           <ServicesSectionItem
-            icon={<MdPhonelinkSetup />}
-            title="App Dev"
-            desc="I develop mobile application. I create mobile app with eye catching ui."
+            icon={<RiNodeTree />}
+            title="BackEnd Dev"
+            desc="I started to develop a website backend part litle more."
           />
         </div>
       </div>

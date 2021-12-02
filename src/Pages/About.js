@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Button from "../components/Button";
+import ButtonForResume from "../components/ButtonForResume";
 import PText from "../components/PText";
 import AboutImg from "../assets/images/about-page-img.png";
 import styled from "styled-components";
@@ -107,7 +107,10 @@ const About = () => {
                 place.
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
+            <ButtonForResume
+              btnText="Download CV"
+              btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
+            />
           </div>
           <div className="right">
             <img src={AboutImg} alt="Asrafuzzaman Img" />

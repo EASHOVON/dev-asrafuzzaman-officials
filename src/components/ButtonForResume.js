@@ -4,10 +4,10 @@ import styled from "styled-components";
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     background-color: ${(props) =>
       props.outline ? "transparent" : "var(--gray-1)"};
-    padding: 0.7em 2em;
+    padding: 0.7em 1.8em;
     border-radius: 8px;
     display: inline-block;
     border: 2px solid var(--gray-1);
