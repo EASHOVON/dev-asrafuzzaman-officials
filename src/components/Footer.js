@@ -72,7 +72,7 @@ export default function Footer() {
             links={[
               { title: "Home", path: "/", type: "link" },
               { title: "About", path: "/about", type: "link" },
-              { title: "Projects", path: "/project", type: "link" },
+              { title: "Projects", path: "/projects", type: "link" },
               { title: "Contact", path: "/contact", type: "link" },
             ]}
           />
