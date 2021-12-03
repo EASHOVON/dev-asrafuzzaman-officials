@@ -13,6 +13,7 @@ const AboutItemStyles = styled.div`
   }
   .items {
     display: flex;
+    flex-direction: row;
     gap: 1.5rem;
     position: absolute;
     left: 18rem;
@@ -29,6 +30,7 @@ const AboutItemStyles = styled.div`
     .items {
       position: initial;
       gap: 1rem;
+      flex-direction: column;
     }
     .title {
       font-size: 2rem;

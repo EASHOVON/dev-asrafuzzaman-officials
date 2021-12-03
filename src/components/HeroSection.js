@@ -164,8 +164,8 @@ export default function HeroSection() {
               from discussion and collaboration.
             </PText>
             <ButtonForResume
-              btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
-              btnText="DOWNLOAD RESUME"
+              btnLink="https://drive.google.com/uc?export=download&id=1g2ffSrJ3knZSe6AUnBYJvSyru04TElr-"
+              btnText="Download Resume"
             />
           </div>
           <div className="hero__social">

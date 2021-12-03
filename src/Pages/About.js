@@ -108,8 +108,8 @@ const About = () => {
               </PText>
             </div>
             <ButtonForResume
-              btnText="Download CV"
-              btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
+              btnText="Download Resume"
+              btnLink="https://drive.google.com/uc?export=download&id=1g2ffSrJ3knZSe6AUnBYJvSyru04TElr-"
             />
           </div>
           <div className="right">
@@ -131,12 +131,21 @@ const About = () => {
           <div className="about__info__item">
             <h1 className="about__info__heading">My Skills</h1>
             <AboutInfoItem
-              title="FrontEnd"
-              items={["HTML5", "CSS3", "BootStrap5", "JavaScript", "React"]}
+              title="Expertise"
+              items={["HTML5", "CSS3", "BootStrap", "React"]}
             />
+            <AboutInfoItem title="Comfortable" items={["JavaScript", "ES6"]} />
+            <AboutInfoItem title="Familiar" items={["Tailwind CSS"]} />
             <AboutInfoItem
-              title="BackEnd"
-              items={["Node.js", "Express.js", "MongoDB"]}
+              title="Tools"
+              items={[
+                "Firebase",
+                "Netlify",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Heroku",
+              ]}
             />
           </div>
         </div>

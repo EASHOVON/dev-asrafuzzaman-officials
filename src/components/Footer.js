@@ -3,9 +3,9 @@ import styled from "styled-components";
 import FooterCol from "./FooterCol";
 import PText from "./PText";
 
-const FooterStyles = styled.div`
-  padding-top: 10rem;
+const FooterStyle = styled.div`
   background-color: var(--deep-dark);
+  padding-top: 10rem;
   .container {
     display: flex;
     gap: 3rem;
@@ -54,30 +54,43 @@ const FooterStyles = styled.div`
 
 export default function Footer() {
   return (
-    <FooterStyles>
+    <FooterStyle>
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Asrafuzzaman</h1>
           <PText>
-            I am a Frontend Web Developer, and I'm very passionate and dedicated
-            to my work. With wide experience as a React Web Developer, I have
-            acquired the skills and knowledge necessary to succeed in your
-            project. I enjoy every step of the design process, from discussion
-            and collaboration.
+            A front-end web developer from Uttara, Dhaka. I always make websites
+            that have unique designs and also has a good performance rate.
           </PText>
         </div>
         <div className="footer__col2">
           <FooterCol
             heading="Important Links"
             links={[
-              { title: "Home", path: "/", type: "link" },
-              { title: "About", path: "/about", type: "link" },
-              { title: "Projects", path: "/projects", type: "link" },
-              { title: "Contact", path: "/contact", type: "link" },
+              {
+                title: "Home",
+                path: "/",
+                type: "Link",
+              },
+              {
+                type: "Link",
+                title: "About",
+                path: "/about",
+              },
+              {
+                type: "Link",
+                title: "Projects",
+                path: "/projects",
+              },
+              {
+                type: "Link",
+                title: "Contact",
+                path: "/contact",
+              },
             ]}
           />
         </div>
-        <div className="footer__col2">
+        <div className="footer__col3">
           <FooterCol
             heading="Contact Info"
             links={[
@@ -86,31 +99,35 @@ export default function Footer() {
                 path: "tel:+8801515226983",
               },
               {
-                title: "ashrafuzzzaman.shovon.786@gmail.com",
-                path: "mailto:ashrafuzzzaman.shovon.786@gmail.com",
+                title: "ashrafuzzaman.shovon.786@gmail.com",
+                path: "mailto:ashrafuzzaman.shovon.786@gmail.com",
               },
               {
-                title: "Uttara, Sector-4, Dhaka, Bangladesh",
-                path: "http://google.com/maps",
+                title: "Uttara, Dhaka",
+                path: "https://goo.gl/maps/ah232cQNkW3NahTz9",
               },
             ]}
           />
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="Social Links"
+            heading="social Links"
             links={[
-              {
-                title: "Facebook",
-                path: "https://facebook.com/masuvon",
-              },
               {
                 title: "Linkedin",
                 path: "https://www.linkedin.com/in/eashovon/",
               },
               {
                 title: "GitHub",
-                path: "https://www.github.com/eashovon",
+                path: "http://github.com/eashovon",
+              },
+              {
+                title: "Facebook",
+                path: "http://facebook.com/masuvon",
+              },
+              {
+                title: "Twitter",
+                path: "https://twitter.com/eashovon",
               },
             ]}
           />
@@ -118,9 +135,9 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2021 - Ashrafuzzaman | All Right Reserved</PText>
+          <PText>© 2021 - Asrafuzzaman | All Right Reserved</PText>
         </div>
       </div>
-    </FooterStyles>
+    </FooterStyle>
   );
 }
