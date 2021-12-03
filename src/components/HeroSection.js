@@ -5,6 +5,7 @@ import ButtonForResume from "./ButtonForResume";
 import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
+import Particles from "react-tsparticles";
 
 const HeroStyles = styled.div`
   .hero {
@@ -143,79 +144,165 @@ const HeroStyles = styled.div`
   }
 `;
 
-const HeroSection = () => (
-  <HeroStyles>
-    <div className="hero">
-      <div className="container">
-        <h1 className="hero__heading">
-          <span>Hello This is</span>
-          <span className="hero__name">Asrafuzzaman</span>
-        </h1>
-        <div className="hero__img">
-          <img src={HeroImg} alt="" />
-        </div>
-        <div className="hero__info">
-          <PText>
-            I am a Frontend Web Developer, and I'm very passionate and dedicated
-            to my work. With wide experience as a React Web Developer, I have
-            acquired the skills and knowledge necessary to succeed in your
-            project. I enjoy every step of the design process, from discussion
-            and collaboration.
-          </PText>
-          <ButtonForResume
-            btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
-            btnText="DOWNLOAD RESUME"
-          />
-        </div>
-        <div className="hero__social">
-          <div className="hero__social__indicator">
-            <p>Follow</p>
-            <img src={SocialMediaArrow} alt="icon" />
+export default function HeroSection() {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+  return (
+    <HeroStyles>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40,
+              },
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: false,
+              speed: 6,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              random: true,
+              value: 5,
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+      <div className="hero">
+        <div className="container">
+          <h1 className="hero__heading">
+            <span>Hello This is</span>
+            <span className="hero__name">Asrafuzzaman</span>
+          </h1>
+          <div className="hero__img">
+            <img src={HeroImg} alt="" />
           </div>
-          <div className="hero__social__text">
-            <ul>
-              <li>
-                <a
-                  href="https://www.facebook.com/masuvon/"
-                  target="_blank"
-                  rel="noreferrer">
-                  FB
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/eashovon/"
-                  target="_blank"
-                  rel="noreferrer">
-                  LI
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/EASHOVON"
-                  target="_blank"
-                  rel="noreferrer">
-                  GI
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/eashovon"
-                  target="_blank"
-                  rel="noreferrer">
-                  TW
-                </a>
-              </li>
-            </ul>
+          <div className="hero__info">
+            <PText>
+              I am a Frontend Web Developer, and I'm very passionate and
+              dedicated to my work. With wide experience as a React Web
+              Developer, I have acquired the skills and knowledge necessary to
+              succeed in your project. I enjoy every step of the design process,
+              from discussion and collaboration.
+            </PText>
+            <ButtonForResume
+              btnLink="https://drive.google.com/uc?export=download&id=1P_3ZwGNuyN2ilGo43xgh1SnhQ6Yc4V54"
+              btnText="DOWNLOAD RESUME"
+            />
           </div>
-        </div>
-        <div className="hero__scrollDown">
-          <p>Scroll</p>
-          <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
+          <div className="hero__social">
+            <div className="hero__social__indicator">
+              <p>Follow</p>
+              <img src={SocialMediaArrow} alt="icon" />
+            </div>
+            <div className="hero__social__text">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/masuvon/"
+                    target="_blank"
+                    rel="noreferrer">
+                    FB
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/eashovon/"
+                    target="_blank"
+                    rel="noreferrer">
+                    LI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/EASHOVON"
+                    target="_blank"
+                    rel="noreferrer">
+                    GI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/eashovon"
+                    target="_blank"
+                    rel="noreferrer">
+                    TW
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="hero__scrollDown">
+            <p>Scroll</p>
+            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
+          </div>
         </div>
       </div>
-    </div>
-  </HeroStyles>
-);
-
-export default HeroSection;
+    </HeroStyles>
+  );
+}
